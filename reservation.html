@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ababa Steak</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!--LINK-->
+    <link rel='stylesheet' type='text/css' media='screen' href='reservation.css'>
+    <link rel="icon" href="source/logo6.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+ <!-- jquery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+  
+    <script src='main.js'></script>
+    <!-- MOBILE -->
+    <div class="mobile--navigation" id="mobile--navigation">
+        <div class="mobile--navigation--header">
+            <img src="source/logo5.png" alt="" class="logo"!imporant/>
+        
+        <div class="close--button" onclick="toggleMobileNavigation()">
+            <button>
+                <i class="fa fa-close"> </i>
+            </button>
+          </div>
+        </div>
+
+        <a href="home.html" class="mobile--navigation--item mobile--navigation--item__active1">Home</a>
+        <a href="menu.html" class="mobile--navigation--item mobile--navigation--item__active2">Menu</a>
+        <a href="#" class="mobile--navigation--item mobile--navigation--item__active3">Promo</a>
+        <a href="about.html" class="mobile--navigation--item mobile--navigation--item__active4">About Us</a>
+        <a href="reservation.html" class="mobile--navigation--item mobile--navigation--item__active5">Reservation</a>
+    </div>
+
+    <!-- PC/LAPTOP -->
+    <header>
+      
+      <!-- <div class="header1">
+        <img src="source/logo6.png" alt="" class="logo"!important/>
+        
+        
+        <nav class="navigation">
+          <a href="home.html" class="navigation--item navigation--item__active1">Home</a>
+          <a href="menu.html" class="navigation--item navigation--item__active2">Menu</a>
+          <a href="#" class="navigation--item navigation--item__active3">Promo</a>
+          <a href="about.html" class="navigation--item navigation--item__active4">About Us</a>
+          <a href="reservation.html"> <button class="navigation--item navigation--button">RESERVE NOW</button> </a>
+        </nav>
+        
+        
+      </div> -->
+      <div class="menu--button" onclick="toggleMobileNavigation()">
+        <button>
+          <i class="fa fa-reorder"> </i>
+        </button> 
+      </div>
+      
+    </header>
+    <div id="container">
+    
+      <main>
+        <div class="ababasteak">
+          A B A B A S T E A K
+        </div>
+
+        <div class="main--container">
+          <div class="background"></div>
+          <div class="reservation" id="gohere">
+              RESERVATION
+          </div>
+          
+          <div class="form--name">
+            <div class="explanation-form">
+              Name
+            </div>
+              <input id="nama" class="box" type="text" placeholder="Input Name">
+          </div>
+
+            
+
+          <div class="form--email">
+            <div class="explanation-form">
+              E-mail
+            </div>
+              <input id ="email" class="box" type="text" placeholder="Input E-mail">
+          </div>
+
+          <div class="explanation-form">
+            Seat
+          </div>
+          <div class="form--seat form--seat--flex">
+              <input id ="seat" class="box box-seat" type="text" placeholder="Input Seat(format : X-xx">
+              <div class="checkseat">
+                <a href="#image-seat" class="seat--hyperlink">Check Seat!</a>
+              </div>
+          </div>
+
+
+
+          <div class="form--date"> 
+            <div class="explanation-form">
+              Reservation Date
+            </div>
+              <input id ="date" class="box-date" type="date">
+              <input id ="date" class="box-date" type="time">
+              <!-- <input id ="date" class="box" type="datetime-local"> -->
+          </div>
+
+
+          <div class="form--62">
+              <select>
+                  <option class="text" value="" selected>ID +62</option>
+                  <option class="text" value="">AR +54</option>
+              </select>
+
+               <div class="form--handphone">
+                  <input name="num" id ="handphone" class="box-phone" type="tel" placeholder="Input Phonenumber">
+              </div>
+          </div>
+
+
+          <div class="form--checkbox">
+              <input id="boxes" type="checkbox">
+              <label for="boxes" class="text--checkbox"> Saya setuju dengan <a href="">Ketentuan Penggunaan</a> dan <a href="">Kebijakan Privasi</a></label>
+          </div>
+
+          <div class="form--register">
+            <a href="afterform.html">
+              <button class="registernow"> Book Now </button>
+            </a>
+          </div>
+      </div>
+
+      
+    </main>
+
+    
+
+
+
+
+    <footer>
+      <div class="socials">
+        <p class ="contact-us"> Contact Us</p>
+        <span class="logo--footer">
+          <a href="https://instagram.com/abubasteak_?igshid=1s126p5vqp4s" class="social--item  instagram" target=_blank><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCIgsR8dqfm8HQP2NvqiFCQw" class="social--item  youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://www.facebook.com/steak.abuba/" class="social--item  facebook" target=_blank><i class="fa fa-facebook-square"></i></a>
+        </span>
+      </div>
+      <div class="copyright">
+        <small class="copy-text"> Coppyright &copy; 2021 - Ababa Steak . all right reseved </small>
+      </div>
+
+    </footer>
+    <div class="spacing"></div>
+
+
+    <div class="kotak">
+        <div id="image-seat"></div>
+        <div class="goback">  <a href="#gohere" class="gohere--hyperlink">Go Back to Form </a></div>
+    </div>
+
+
+    
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
